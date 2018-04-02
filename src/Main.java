@@ -16,8 +16,11 @@ public class Main {
         /*Solution7 solution7 = new Solution7();
         System.out.println(solution7.Fibonacci(6));*/
 
-        Solution8 solution8 = new Solution8();
-        System.out.println(solution8.JumpFloor(6));
+        /*Solution8 solution8 = new Solution8();
+        System.out.println(solution8.JumpFloor(6));*/
+
+        Solution10 solution10 = new Solution10();
+        System.out.println(solution10.RectCover(5));
 
     }
 }

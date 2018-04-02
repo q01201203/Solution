@@ -4,7 +4,11 @@
  */
 public class Solution9 {
     public int JumpFloorII(int target) {
-
-        return 0;
+        int count=1;
+        int f = target -1;
+        for(int i=0;i<f;i++){
+            count *= 2;
+        }
+        return count;
     }
 }
