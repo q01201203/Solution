@@ -19,8 +19,14 @@ public class Main {
         /*Solution8 solution8 = new Solution8();
         System.out.println(solution8.JumpFloor(6));*/
 
-        Solution10 solution10 = new Solution10();
-        System.out.println(solution10.RectCover(5));
+        /*Solution10 solution10 = new Solution10();
+        System.out.println(solution10.RectCover(5));*/
+
+        /*Solution11 solution11 = new Solution11();
+        System.out.println(solution11.NumberOf1(-2147483648));*/
+
+        /*Solution12 solution12 = new Solution12();
+        System.out.println(solution12.Power(2,0));*/
 
     }
 }
