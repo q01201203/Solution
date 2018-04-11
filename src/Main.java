@@ -28,6 +28,25 @@ public class Main {
         /*Solution12 solution12 = new Solution12();
         System.out.println(solution12.Power(2,0));*/
 
+        /*Solution13 solution13 = new Solution13();
+        int[] origin = new int[]{1,2,3,5,4,7};
+        solution13.reOrderArray(origin);
+        for (int i : origin) {
+            System.out.println(i);
+        }*/
+
+        /*Solution14 solution14 = new Solution14();
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        ListNode listNode = solution14.FindKthToTail(listNode1,4);
+        if (listNode!=null){
+            System.out.println(listNode.val);
+        }*/
     }
 }
 
