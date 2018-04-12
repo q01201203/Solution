@@ -47,6 +47,23 @@ public class Main {
         if (listNode!=null){
             System.out.println(listNode.val);
         }*/
+
+        Solution16 solution16 = new Solution16();
+        ListNode listNode1_1 = new ListNode(1);
+        ListNode listNode1_2 = new ListNode(3);
+        ListNode listNode1_3 = new ListNode(4);
+        listNode1_1.next = listNode1_2;
+        listNode1_2.next = listNode1_3;
+        ListNode listNode2_1 = new ListNode(2);
+        ListNode listNode2_2 = new ListNode(3);
+        ListNode listNode2_3 = new ListNode(5);
+        listNode2_1.next = listNode2_2;
+        listNode2_2.next = listNode2_3;
+        ListNode listNode = solution16.Merge(listNode1_1,listNode2_1);
+        while (listNode!=null){
+            System.out.println(listNode.val);
+            listNode = listNode.next;
+        }
     }
 }
 
