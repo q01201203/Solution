@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.test18();
+        main.test20();
     }
 
     void test5() {
@@ -131,6 +133,32 @@ public class Main {
 
         Solution18 solution18 = new Solution18();
         solution18.Mirror(treeNode1);
+    }
+
+    void test19(){
+        Solution19 solution19 = new Solution19();
+        ArrayList<Integer> arrayList = solution19.printMatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}});
+        for (Integer i : arrayList) {
+            System.out.println(i);
+        }
+    }
+
+    void test20(){
+        Solution20 solution20 = new Solution20();
+        solution20.push(3);
+        System.out.println(solution20.min());
+        solution20.push(4);
+        System.out.println(solution20.min());
+        solution20.push(2);
+        System.out.println(solution20.min());
+        solution20.push(3);
+        System.out.println(solution20.min());
+        solution20.pop();
+        System.out.println(solution20.min());
+        solution20.pop();
+        System.out.println(solution20.min());
+        solution20.push(0);
+        System.out.println(solution20.min());
     }
 }
 
