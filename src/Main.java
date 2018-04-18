@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.test20();
+        main.test22();
     }
 
     void test5() {
@@ -159,6 +159,36 @@ public class Main {
         System.out.println(solution20.min());
         solution20.push(0);
         System.out.println(solution20.min());
+    }
+
+    void test21(){
+        Solution21 solution21 = new Solution21();
+        int[] pushA = {1,2,3,4,5};
+        //int[] popA = {4,5,3,2,1};
+        int[] popA = {2,4,5,3,1};
+        System.out.println(solution21.IsPopOrder(pushA,popA));
+    }
+
+    void test22(){
+        TreeNode treeNode1 = new TreeNode(8);
+        TreeNode treeNode2 = new TreeNode(6);
+        TreeNode treeNode3 = new TreeNode(10);
+        TreeNode treeNode4 = new TreeNode(5);
+        TreeNode treeNode5 = new TreeNode(7);
+        TreeNode treeNode6 = new TreeNode(9);
+        TreeNode treeNode7 = new TreeNode(11);
+        treeNode1.left = treeNode2;
+        treeNode1.right = treeNode3;
+        treeNode2.left = treeNode4;
+        treeNode2.right = treeNode5;
+        treeNode3.left = treeNode6;
+        treeNode3.right = treeNode7;
+
+        Solution22 solution22 = new Solution22();
+        ArrayList<Integer> arrayList = solution22.PrintFromTopToBottom(treeNode1);
+        for (Integer integer : arrayList) {
+            System.out.println(integer);
+        }
     }
 }
 
